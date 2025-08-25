@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class JsonFileLogger implements LogAdapter {
-    private final String filePath;
+public class JsonFileLogger implements Logger {
+    private String filePath;
     private ObjectMapper objectMapper;
 
     public JsonFileLogger(String filePath) {
