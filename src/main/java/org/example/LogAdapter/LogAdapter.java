@@ -1,0 +1,11 @@
+package org.example.LogAdapter;
+
+public class LogAdapter {
+    private Logger logger;
+    public LogAdapter(Logger logger) {
+        this.logger = logger;
+    }
+    public void log(String operacao) {
+        logger.logOperacao(operacao);
+    }
+}
